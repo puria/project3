@@ -7,7 +7,7 @@
 
 # But not these files...
 !/.gitignore
-!/.dvr/*
+!/.vroom/*
 !/.golangci.yml
 !/.env.sample
 !/.cruft.json
