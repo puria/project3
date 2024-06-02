@@ -1,0 +1,18 @@
+{
+  "template": "https://github.com/dyne/starters",
+  "commit": "c7a4e2ce63af92c29ccf2c3e907472a9133d8cec",
+  "checkout": null,
+  "context": {
+    "cookiecutter": {
+      "project_name": "proj",
+      "project_slug": "proj",
+      "project_description": "oneline punchline for your project",
+      "full_name": "Puria Nafisi Azizi",
+      "email": "puria@dyne.org",
+      "repo": "github.com/dyne/proj",
+      "go_version": "1.22",
+      "_template": "https://github.com/dyne/starters"
+    }
+  },
+  "directory": "go"
+}
