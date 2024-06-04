@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-eval "$(~/.local/bin/mise activate bash)"
+mise activate --shims
 mise use go@latest
 go build
