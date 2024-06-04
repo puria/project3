@@ -10,9 +10,9 @@ jobs:
     steps:
       - uses: appleboy/ssh-action@v1.0.3
         with:
-          host: ${{ env.HOST }}
-          username: ${{ env.USERNAME }}
+          host: ${{ vars.HOST }}
+          username: ${{ vars.USERNAME }}
           key: ${{ secrets.DVR }}
-          port: ${{ env.PORT }}
+          port: ${{ vars.PORT }}
           script: |
             ./vroom ${{ github.repository }} ${{ github.event.number }}
