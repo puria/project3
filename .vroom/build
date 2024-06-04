@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-
-mise use --global go@latest
+eval "$(~/.local/bin/mise activate bash)"
+mise use go@latest
 go build
