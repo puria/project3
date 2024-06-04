@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-nohup ./project3 & disown
+./project3
