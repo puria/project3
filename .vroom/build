@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
+mise use --global go@latest
 go build
