@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
-
+mise use go@latest
+mise activate --shims
+export PATH="$HOME/.local/share/mise/shims:$PATH"
 go build

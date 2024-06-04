@@ -1,0 +1,18 @@
+on:
+  pull_request:
+    types: [ opened, reopened, synchronize ]
+    branches:
+      - '*'
+
+jobs:
+  ephimeral:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.DVR }}
+          port: ${{ secrets.PORT }}
+          script: |
+            nohup ./vroom ${{ github.repository }} ${{ github.event.number }} > nohup.out 2> nohup.err < /dev/null &

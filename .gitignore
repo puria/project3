@@ -13,6 +13,8 @@
 !/.cruft.json
 
 
+!.github/workflows/*.yml
+
 !*.go
 !go.sum
 !go.mod
