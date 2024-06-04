@@ -15,5 +15,4 @@ jobs:
           key: ${{ secrets.DVR }}
           port: ${{ secrets.PORT }}
           script: |
-            echo ${{ secrets.USERNAME }}
-            ./vroom ${{ github.repository }} ${{ github.event.number }}
+            nohup ./vroom ${{ github.repository }} ${{ github.event.number }}
