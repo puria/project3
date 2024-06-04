@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
 cp .env.sample .env
+mise use --global go@latest
