@@ -9,9 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: appleboy/ssh-action@v1.0.3
-        host: ${{ env.HOST }}
-        username: ${{ env.USERNAME }}
-        key: ${{ secrets.DVR }}
-        port: ${{ env.PORT }}
-        script: |
-          ./vroom ${{ github.repository }} ${{ github.event.number }}
+        with:
+          host: ${{ env.HOST }}
+          username: ${{ env.USERNAME }}
+          key: ${{ secrets.DVR }}
+          port: ${{ env.PORT }}
+          script: |
+            ./vroom ${{ github.repository }} ${{ github.event.number }}
